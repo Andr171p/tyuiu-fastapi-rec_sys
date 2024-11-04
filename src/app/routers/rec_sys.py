@@ -19,7 +19,7 @@ async def get_user_recommendation(request: UserRequestSchema) -> JSONResponse:
     data = get_user_df(user=user)
     x = scaler.standard(data=data)
     model.predict(x=x)
-    recommendations = model.recommend(top_n=top_n)
+    recommendations: list[str] = model.recommend(top_n=top_n)
     return JSONResponse(
         content={
             'status': 'ok',
