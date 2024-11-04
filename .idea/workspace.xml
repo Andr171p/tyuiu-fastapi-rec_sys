@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec_sys 1.0.4">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec_sys 1.0.7">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/routers/docs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routers/docs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
       <recent name="C:\Users\andre\TyuiuRecSys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.load">
+  <component name="RunManager" selected="Python.utils">
     <configuration name="load" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TyuiuRecSys" />
       <option name="ENV_FILES" value="" />
@@ -144,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="utils (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TyuiuRecSys" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,11 +155,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/preprocessing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/preprocessing/utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.load" />
         <item itemvalue="Python.request" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.standard" />
-        <item itemvalue="Python.utils (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +242,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730717460467</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tyuiu-fastapi-rec_sys 1.0.5">
+      <option name="closed" value="true" />
+      <created>1730717544253</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730717544253</updated>
+    </task>
+    <task id="LOCAL-00008" summary="tyuiu-fastapi-rec_sys 1.0.6">
+      <option name="closed" value="true" />
+      <created>1730717660238</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730717660238</updated>
+    </task>
+    <task id="LOCAL-00009" summary="tyuiu-fastapi-rec_sys 1.0.7">
+      <option name="closed" value="true" />
+      <created>1730717946460</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730717946460</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -253,6 +279,9 @@
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.2" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.3" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec_sys 1.0.4" />
+    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.5" />
+    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.6" />
+    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec_sys 1.0.7" />
   </component>
 </project>

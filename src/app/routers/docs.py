@@ -7,4 +7,5 @@ docs_router = APIRouter()
 
 @docs_router.get(path='/')
 async def docs_redirect() -> RedirectResponse:
-    return RedirectResponse(url='/')
+    response = RedirectResponse(url='/')
+    return response

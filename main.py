@@ -37,13 +37,13 @@ app = FastAPI(
 )
 
 app.include_router(
-    router=docs_router,
-    tags=['Docs']
-)
-app.include_router(
     router=rec_sys_router,
     prefix='/rec_sys',
     tags=['Recommendation system']
+)
+app.include_router(
+    router=docs_router,
+    tags=['Docs']
 )
 
 app.add_middleware(GlobalMiddleware)
