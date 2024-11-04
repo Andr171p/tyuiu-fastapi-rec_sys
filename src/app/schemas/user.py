@@ -11,11 +11,18 @@ class _UserInfo:
     bonus_points: int
     is_enrolled: int
 
-    @field_validator('gender')
+    @field_validator('age')
     @classmethod
-    def validate_gender(cls, v: int) -> int:
-        if v not in (0, 1):
-            raise ValueError('field gender must be binary')
+    def validate_age(cls, v: int) -> int:
+        if v <= 0:
+            raise ValueError('field age must be >0')
+        return v
+
+    @field_validator('gpa')
+    @classmethod
+    def validate_gpa(cls, v: float) -> float:
+        if v < 1 or v > 5:
+            raise ValueError('field gpa must be in 1 <= gpa <= 5')
         return v
 
 

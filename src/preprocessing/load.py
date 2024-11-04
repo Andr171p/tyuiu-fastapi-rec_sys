@@ -7,7 +7,8 @@ def load_csv(file_path: str) -> DataFrame:
     df = df.drop(labels='Unnamed: 0', axis=1)
     return df
 
-from src.app.schemas.user import UserSchema
+
+'''from src.app.schemas.user import UserSchema
 from src.app.services.user_df import get_user_df
 
 
@@ -57,4 +58,4 @@ print(type(res))
 from src.app.schemas.request import UserRequestSchema
 
 rec_user = UserRequestSchema(top_n=5, user=user)
-print(rec_user.user)
+print(rec_user.user)'''

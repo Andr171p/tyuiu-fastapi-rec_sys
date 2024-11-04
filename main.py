@@ -3,7 +3,9 @@ from fastapi import FastAPI
 import contextlib
 
 from src.app.middleware.globals import GlobalMiddleware, g
+from src.app.middleware.logs import LogMiddleware
 from src.app.routers.rec_sys import rec_sys_router
+from src.app.routers.docs import docs_router
 from src.preprocessing.standard import StandardScalerService
 from src.ml.model import RecommendSystemModel
 
@@ -33,8 +35,16 @@ app = FastAPI(
     title="Recommendation system for applicants",
     lifespan=lifespan
 )
+
+app.include_router(
+    router=docs_router,
+    tags=['Docs']
+)
 app.include_router(
     router=rec_sys_router,
-    prefix='/rec_sys'
+    prefix='/rec_sys',
+    tags=['Recommendation system']
 )
+
 app.add_middleware(GlobalMiddleware)
+app.add_middleware(LogMiddleware)

@@ -31,10 +31,3 @@ class StandardScalerService:
                 cls._scaler = pickle.load(file)
             return cls._scaler
         return
-
-
-scaler = StandardScalerService()
-from src.preprocessing.load import load_csv
-data = load_csv(r'C:\Users\andre\TyuiuRecSys\x_ohe.csv').drop('ФИО', axis=1)
-scaler.fit(data)
-scaler.save()
