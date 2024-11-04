@@ -21,13 +21,13 @@ class StandardScalerService:
 
     @classmethod
     def save(cls, file_name: str = 'standard_scaler.pkl') -> None:
-        with open(file=fr'{STANDARD_SCALER_PATH}\{file_name}', mode='wb') as file:
+        with open(file=fr'{STANDARD_SCALER_PATH}/{file_name}', mode='wb') as file:
             pickle.dump(cls._scaler, file)
 
     @classmethod
     def load(cls, file_name: str = 'standard_scaler.pkl') -> StandardScaler | None:
         if cls._scaler is None:
-            with open(file=fr'{STANDARD_SCALER_PATH}\{file_name}', mode='rb') as file:
+            with open(file=fr'{STANDARD_SCALER_PATH}/{file_name}', mode='rb') as file:
                 cls._scaler = pickle.load(file)
             return cls._scaler
         return

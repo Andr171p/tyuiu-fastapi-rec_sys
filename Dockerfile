@@ -1,6 +1,6 @@
 FROM python:3.11
 
-WORKDIR \rec_sys_api
+WORKDIR /rec_sys_api
 
 COPY requirements.txt .
 
