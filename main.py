@@ -41,10 +41,10 @@ app.include_router(
     prefix='/rec_sys',
     tags=['Recommendation system']
 )
-'''app.include_router(
+app.include_router(
     router=docs_router,
     tags=['Docs']
-)'''
+)
 
 app.add_middleware(GlobalMiddleware)
 app.add_middleware(LogMiddleware)

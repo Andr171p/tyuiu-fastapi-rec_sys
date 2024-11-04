@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec_sys 1.0.7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec_sys 1.0.9">
       <change beforePath="$PROJECT_DIR$/src/app/routers/docs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routers/docs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +264,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730717946460</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="tyuiu-fastapi-rec_sys 1.0.8">
+      <option name="closed" value="true" />
+      <created>1730718299706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730718299706</updated>
+    </task>
+    <task id="LOCAL-00011" summary="tyuiu-fastapi-rec_sys 1.0.9">
+      <option name="closed" value="true" />
+      <created>1730718420363</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730718420363</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -282,6 +296,8 @@
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.5" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.6" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec_sys 1.0.7" />
+    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.8" />
+    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec_sys 1.0.9" />
   </component>
 </project>
