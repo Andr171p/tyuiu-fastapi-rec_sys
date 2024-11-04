@@ -1,8 +1,10 @@
 from pydantic import BaseModel, ConfigDict
 
-from typing import Literal, List
+from typing import Literal
+
+from src.app.schemas.model import ModelRecommendationSchema
 
 
 class UserResponseSchema:
     status: Literal['ok'] = 'ok'
-    data: List[str]
+    data: ModelRecommendationSchema
