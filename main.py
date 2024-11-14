@@ -6,6 +6,7 @@ from src.app.middleware.globals import GlobalMiddleware, g
 from src.app.middleware.logs import LogMiddleware
 from src.app.routers.rec_sys import rec_sys_router
 from src.app.routers.docs import docs_router
+from src.app.routers.robots import robots_router
 from src.preprocessing.standard import StandardScalerService
 from src.ml.model import RecSysModel
 
@@ -44,6 +45,10 @@ app.include_router(
 app.include_router(
     router=docs_router,
     tags=['Docs']
+)
+app.include_router(
+    router=robots_router,
+    tags=['Robots']
 )
 
 app.add_middleware(GlobalMiddleware)

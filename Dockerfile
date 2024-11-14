@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["gunicorn", "-w", "3", "--bind", ":8000", "main:app"]
+CMD ["gunicorn", "-k uvicorn.workers.UvicornWorker", "-w 3", "main:app"]

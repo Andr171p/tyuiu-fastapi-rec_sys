@@ -6,8 +6,6 @@ from src.app.schemas.request import UserRequestSchema
 from src.app.schemas.response import UserResponseSchema
 from src.app.services.user_df import get_user_df
 
-from typing import List
-
 
 rec_sys_router = APIRouter()
 

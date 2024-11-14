@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec_sys 1.0.11">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.2">
+      <change afterPath="$PROJECT_DIR$/src/app/routers/robots.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/configuration/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/middleware/globals.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/middleware/globals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ml/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ml/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing/standard.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing/standard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing/standard_scaler.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/standard_scaler.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/routers/rec_sys.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routers/rec_sys.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +324,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730723071590</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1">
+      <option name="closed" value="true" />
+      <created>1731603548151</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731603548151</updated>
+    </task>
+    <task id="LOCAL-00015" summary="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.1">
+      <option name="closed" value="true" />
+      <created>1731603732961</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731603732961</updated>
+    </task>
+    <task id="LOCAL-00016" summary="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.2">
+      <option name="closed" value="true" />
+      <created>1731603889820</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731603889820</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -350,6 +368,9 @@
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.9" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.10" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec_sys 1.0.11" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.1" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.2" />
   </component>
 </project>
