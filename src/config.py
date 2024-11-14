@@ -38,11 +38,17 @@ class LoggingSettings(BaseSettings):
     log_format: str = LOG_DEFAULT_FORMAT
 
 
+class RateLimitSettings(BaseSettings):
+    rate_limit: int = 5
+    period: int = 30
+
+
 class Settings(BaseSettings):
     app: AppSettings = AppSettings()
     logging: LoggingSettings = LoggingSettings()
     data: DataSettings = DataSettings()
     standard: StandardScalerSettings = StandardScalerSettings()
+    security: RateLimitSettings = RateLimitSettings()
 
 
 settings = Settings()
