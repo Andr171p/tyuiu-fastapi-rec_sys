@@ -10,7 +10,16 @@ from src.app.routers.robots import robots_router
 from src.preprocessing.standard import StandardScalerService
 from src.ml.model import RecSysModel
 
-from loguru import logger
+import logging
+
+from src.app.gunicorn.application import Application
+from src.app.gunicorn.options import get_app_options
+from src.config import settings
+
+
+logging.basicConfig(
+    format=settings.logging.log_format
+)
 
 
 @contextlib.asynccontextmanager
@@ -26,7 +35,7 @@ async def lifespan(app: FastAPI) -> None:
         name='model',
         default=model
     )
-    logger.info("Fastapi application is startup")
+    logging.info("Fastapi application is startup")
     yield
     del scaler
     del model
@@ -53,3 +62,21 @@ app.include_router(
 
 app.add_middleware(GlobalMiddleware)
 app.add_middleware(LogMiddleware)
+
+
+def main() -> None:
+    application = Application(
+        application=app,
+        options=get_app_options(
+            host=settings.app.host,
+            port=settings.app.port,
+            timeout=settings.app.timeout,
+            log_level=settings.logging.log_level,
+            workers=settings.app.workers
+        )
+    )
+    application.run()
+
+
+if __name__ == "__main__":
+    main()

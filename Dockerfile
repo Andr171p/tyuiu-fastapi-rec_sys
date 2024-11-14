@@ -8,6 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 8000
-
-CMD ["gunicorn", "-k uvicorn.workers.UvicornWorker", "-w 3", "main:app"]
+CMD ["/bin/bash", "-c", "python main.py"]

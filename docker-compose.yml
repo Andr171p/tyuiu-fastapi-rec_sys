@@ -1,9 +1,0 @@
-version: '3.11'
-
-services:
-  microservice:
-    build: .
-    ports:
-      - "8000:8000"
-    restart: unless-stopped
-    command: gunicorn -k uvicorn.workers.UvicornWorker -w 3 main:app
