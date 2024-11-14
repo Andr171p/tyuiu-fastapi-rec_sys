@@ -40,7 +40,7 @@ class LoggingSettings(BaseSettings):
 
 class RateLimitSettings(BaseSettings):
     rate_limit: int = 5
-    period: int = 30
+    period: int = 1
 
 
 class Settings(BaseSettings):
