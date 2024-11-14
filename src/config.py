@@ -23,7 +23,7 @@ class StandardScalerSettings(BaseSettings):
 class AppSettings(BaseSettings):
     host: str = "0.0.0.0"
     port: int = 8000
-    workers: int = 1
+    workers: int = 3
     timeout: int = 900
 
 
