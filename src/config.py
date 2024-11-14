@@ -1,9 +1,31 @@
-from src.utils import root_path
+from pathlib import Path
+from pydantic_settings import BaseSettings
 
 
-STANDARD_SCALER_PATH = fr"{root_path()}/src/preprocessing"
+BASE_DIR: Path = Path(__file__).resolve().parent.parent
 
-TRAIN_INPUT_PATH = fr"{root_path()}/data/x_train.csv"
-TEST_INPUT_PATH = fr"{root_path()}/data/x_test.csv"
-TRAIN_OUTPUT_PATH = fr"{root_path()}/data/y_train.csv"
-TEST_OUTPUT_PATH = fr"{root_path()}/data/y_test.csv"
+
+class DataSettings(BaseSettings):
+    x_train_path: Path = BASE_DIR / "data" / "x_train.csv"
+    x_test_path: Path = BASE_DIR / "data" / "x_test.csv"
+    y_train_path: Path = BASE_DIR / "data" / "y_train.csv"
+    y_test_path: Path = BASE_DIR / "data" / "y_test.csv"
+
+
+class StandardScalerSettings(BaseSettings):
+    dir_path: Path = BASE_DIR / "models"
+    file_name: str = "standard_scaler.pkl"
+
+
+class AppSettings(BaseSettings):
+    app_name: str = "Rec-sys API"
+    app_v: str = "0.0.1"
+
+
+class Settings(BaseSettings):
+    app: AppSettings = AppSettings()
+    data: DataSettings = DataSettings()
+    standard: StandardScalerSettings = StandardScalerSettings()
+
+
+settings = Settings()

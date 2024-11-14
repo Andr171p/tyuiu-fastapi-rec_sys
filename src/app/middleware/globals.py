@@ -1,10 +1,10 @@
-from collections.abc import Awaitable, Callable
-from contextvars import ContextVar, copy_context
-from typing import Any
-
 from fastapi import Request, Response
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.types import ASGIApp
+
+from typing import Any
+from collections.abc import Awaitable, Callable
+from contextvars import ContextVar, copy_context
 
 
 class Globals:

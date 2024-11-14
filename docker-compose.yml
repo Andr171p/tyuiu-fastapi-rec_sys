@@ -1,0 +1,10 @@
+version: '3.11'
+
+services:
+  microservice:
+    build: .
+    command: gunicorn -w 3 --bind :8000 main:app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app

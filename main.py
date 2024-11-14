@@ -7,7 +7,7 @@ from src.app.middleware.logs import LogMiddleware
 from src.app.routers.rec_sys import rec_sys_router
 from src.app.routers.docs import docs_router
 from src.preprocessing.standard import StandardScalerService
-from src.ml.model import RecommendSystemModel
+from src.ml.model import RecSysModel
 
 from loguru import logger
 
@@ -16,7 +16,7 @@ from loguru import logger
 async def lifespan(app: FastAPI) -> None:
     scaler = StandardScalerService()
     scaler.load()
-    model = RecommendSystemModel()
+    model = RecSysModel()
     g.set_default(
         name='scaler',
         default=scaler

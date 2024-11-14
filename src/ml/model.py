@@ -1,19 +1,17 @@
 import numpy as np
-
+from pandas import DataFrame
 from sklearn.metrics.pairwise import cosine_similarity
 
-from pandas import DataFrame, Series
-
-from src.config import TRAIN_INPUT_PATH, TRAIN_OUTPUT_PATH
-from src.preprocessing.load import load_csv
+from src.config import settings
+from src.preprocessing.utils import load_csv
 
 
-class RecommendSystemModel:
-    _similarity: np.ndarray = None
+class RecSysModel:
+    _similarity: np.ndarray | None = None
 
     def __init__(self) -> None:
-        self._inputs = load_csv(TRAIN_INPUT_PATH)
-        self._outputs = load_csv(TRAIN_OUTPUT_PATH)
+        self._inputs = load_csv(settings.data.x_train_path)
+        self._outputs = load_csv(settings.data.y_train_path)
 
     def predict(self, x: DataFrame | np.ndarray) -> np.ndarray | None:
         if x.shape != (1, 25):
