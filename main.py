@@ -1,20 +1,20 @@
 from fastapi import FastAPI
-
 import contextlib
+import logging
 
+from src.config import settings
+
+from src.app.gunicorn.application import Application
+from src.app.gunicorn.options import get_app_options
 from src.app.middleware.globals import GlobalMiddleware, g
 from src.app.middleware.rate_limit import RateLimitMiddleware
 from src.app.routers.rec_sys import rec_sys_router
 from src.app.routers.docs import docs_router
 from src.app.routers.robots import robots_router
+
+from src.preprocessing.ohe import OHE
 from src.preprocessing.scaler import Scaler
 from src.ml.model import RecSysModel
-
-import logging
-
-from src.app.gunicorn.application import Application
-from src.app.gunicorn.options import get_app_options
-from src.config import settings
 
 
 logging.basicConfig(
@@ -24,17 +24,14 @@ logging.basicConfig(
 
 @contextlib.asynccontextmanager
 async def lifespan(app: FastAPI) -> None:
+    ohe = OHE()
+    ohe.load()
+    g.set_default(name='ohe', default=ohe)
     scaler = Scaler()
     scaler.load()
+    g.set_default(name='scaler', default=scaler)
     model = RecSysModel()
-    g.set_default(
-        name='scaler',
-        default=scaler
-    )
-    g.set_default(
-        name='model',
-        default=model
-    )
+    g.set_default(name='model', default=model)
     logging.info("Fastapi application is startup")
     yield
     del scaler

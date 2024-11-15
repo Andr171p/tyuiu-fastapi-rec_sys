@@ -14,7 +14,7 @@ class Scaler:
         cls._scaler.fit(data)
 
     @classmethod
-    def standard(cls, data: pd.DataFrame) -> pd.DataFrame:
+    def transform(cls, data: pd.DataFrame) -> pd.DataFrame:
         return cls._scaler.transform(data)
 
     @classmethod

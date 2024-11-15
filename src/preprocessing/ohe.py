@@ -18,7 +18,7 @@ class OHE:
         cls._ohe.fit(data[columns])
 
     @classmethod
-    def encode(
+    def transform(
             cls, data: pd.DataFrame,
             columns: list[str]
     ) -> pd.DataFrame:
