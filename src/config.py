@@ -9,15 +9,14 @@ LOG_DEFAULT_FORMAT: str = "[%(asctime)s.%(msecs)03d] %(module)10s:%(lineno)-3d %
 
 
 class DataSettings(BaseSettings):
-    x_train_path: Path = BASE_DIR / "data" / "x_train.csv"
-    x_test_path: Path = BASE_DIR / "data" / "x_test.csv"
-    y_train_path: Path = BASE_DIR / "data" / "y_train.csv"
-    y_test_path: Path = BASE_DIR / "data" / "y_test.csv"
+    inputs_path: Path = BASE_DIR / "data" / "inputs.csv"
+    outputs_path: Path = BASE_DIR / "data" / "outputs.csv"
 
 
-class StandardScalerSettings(BaseSettings):
+class EncodersSettings(BaseSettings):
     dir_path: Path = BASE_DIR / "models"
-    file_name: str = "standard_scaler.pkl"
+    ohe_filename: str = "ohe.pkl"
+    scaler_filename: str = "scaler.pkl"
 
 
 class AppSettings(BaseSettings):
@@ -47,7 +46,7 @@ class Settings(BaseSettings):
     app: AppSettings = AppSettings()
     logging: LoggingSettings = LoggingSettings()
     data: DataSettings = DataSettings()
-    standard: StandardScalerSettings = StandardScalerSettings()
+    encoders: EncodersSettings = EncodersSettings()
     security: RateLimitSettings = RateLimitSettings()
 
 

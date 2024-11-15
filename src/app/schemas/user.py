@@ -1,56 +1,43 @@
-from pydantic import BaseModel, ValidationError, ValidationInfo, field_validator
+from typing import List, Literal
+from pydantic import BaseModel, field_validator
 
 
-class _UserInfo:
-    gender: int
+class UserSchema(BaseModel):
+    gender: Literal['М', 'Ж']
     age: int
-    sport: int
-    is_foreign: int
+    sport: str
+    foreign: str
     gpa: float
     total_points: int
     bonus_points: int
-    is_enrolled: int
+    exams: List[str]
+    education: str
+    study_form: str
 
-    @field_validator('age')
+    @field_validator("age")
     @classmethod
     def validate_age(cls, v: int) -> int:
         if v <= 0:
-            raise ValueError('field age must be >0')
+            raise ValueError("Field `age` must be >0")
         return v
 
-    @field_validator('gpa')
+    @field_validator("gpa")
     @classmethod
     def validate_gpa(cls, v: float) -> float:
-        if v < 1 or v > 5:
-            raise ValueError('field gpa must be in 1 <= gpa <= 5')
+        if v < 3 or v > 5:
+            raise ValueError("Field `gpa` must be in range [3;5]")
         return v
 
+    @field_validator("total_points")
+    @classmethod
+    def validate_total_points(cls, v: int) -> int:
+        if v < 0 or v > 310:
+            raise ValueError("Field `total_points` must be in range [0;310]")
+        return v
 
-class _UserExam:
-    drawing_exam: int
-    math_exam: int
-    russian_exam: int
-    social_exam: int
-    physic_exam: int
-    history_exam: int
-    composition_architecture_exam: int
-    composition_design_exam: int
-    informatics_exam: int
-    chemistry_exam: int
-    composition_exam: int
-
-
-class _UserEducation:
-    education_bac_degree: int
-    education_school: int
-    education_collage: int
-
-
-class _UserStudyForm:
-    study_form_full: int
-    study_form_ext: int
-    study_form_full_ext: int
-
-
-class UserSchema(BaseModel, _UserStudyForm, _UserEducation, _UserExam, _UserInfo):
-    pass
+    @field_validator("bonus_points")
+    @classmethod
+    def validate_bonus_points(cls, v: int) -> int:
+        if v < 0 or v > 10:
+            raise ValueError("Field `bonus_points` must be in range [0;10]")
+        return v

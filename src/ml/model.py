@@ -10,11 +10,11 @@ class RecSysModel:
     _similarity: np.ndarray | None = None
 
     def __init__(self) -> None:
-        self._inputs = load_csv(settings.data.x_train_path)
-        self._outputs = load_csv(settings.data.y_train_path)
+        self._inputs = load_csv(settings.data.inputs_path)
+        self._outputs = load_csv(settings.data.outputs_path)
 
     def predict(self, x: DataFrame | np.ndarray) -> np.ndarray | None:
-        if x.shape != (1, 25):
+        if x.shape != (1, 24):
             x = x.to_numpy().reshape(1, -1)
         self._similarity = cosine_similarity(
             X=x,

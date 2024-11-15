@@ -7,7 +7,7 @@ from src.app.middleware.rate_limit import RateLimitMiddleware
 from src.app.routers.rec_sys import rec_sys_router
 from src.app.routers.docs import docs_router
 from src.app.routers.robots import robots_router
-from src.preprocessing.standard import StandardScalerService
+from src.preprocessing.scaler import Scaler
 from src.ml.model import RecSysModel
 
 import logging
@@ -24,7 +24,7 @@ logging.basicConfig(
 
 @contextlib.asynccontextmanager
 async def lifespan(app: FastAPI) -> None:
-    scaler = StandardScalerService()
+    scaler = Scaler()
     scaler.load()
     model = RecSysModel()
     g.set_default(
