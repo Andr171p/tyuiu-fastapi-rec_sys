@@ -34,6 +34,10 @@ class OHE:
             sort=False,
             axis=1
         )
+        df = df.drop(
+            labels=settings.preprocessing.drop,
+            axis=1
+        )
         return df
 
     @classmethod

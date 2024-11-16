@@ -15,6 +15,7 @@ class DataSettings(BaseSettings):
 
 class PreprocessingSettings(BaseSettings):
     columns: List[str] = ['Полученное образование', 'Форма обучения']
+    drop: List[str] = ['Полученное образование_Высшее образование специалитет']
 
 
 class EncodersSettings(BaseSettings):
