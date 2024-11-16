@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3">
       <change beforePath="$PROJECT_DIR$/src/app/routers/rec_sys.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routers/rec_sys.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/user_df.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schemas/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schemas/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/preprocessing/ohe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing/ohe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing/scaler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing/scaler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -418,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731706307691</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3">
+      <option name="closed" value="true" />
+      <created>1731708409031</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1731708409031</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -449,6 +454,7 @@
     <MESSAGE value="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.8" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.9" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3" />
   </component>
 </project>
