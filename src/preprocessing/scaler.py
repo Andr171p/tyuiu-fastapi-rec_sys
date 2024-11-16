@@ -15,6 +15,7 @@ class Scaler:
 
     @classmethod
     def transform(cls, data: pd.DataFrame) -> pd.DataFrame:
+        data = data.fillna(0)
         return cls._scaler.transform(data)
 
     @classmethod

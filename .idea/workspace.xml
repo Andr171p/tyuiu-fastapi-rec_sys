@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3">
-      <change beforePath="$PROJECT_DIR$/src/app/routers/rec_sys.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routers/rec_sys.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schemas/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schemas/model.py" afterDir="false" />
+    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.6">
       <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/preprocessing/ohe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing/ohe.py" afterDir="false" />
     </list>
@@ -423,15 +421,29 @@
       <option name="project" value="LOCAL" />
       <updated>1731708409031</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.5">
+      <option name="closed" value="true" />
+      <created>1731789021435</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1731789021435</updated>
+    </task>
+    <task id="LOCAL-00027" summary="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.6">
+      <option name="closed" value="true" />
+      <created>1731789051872</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1731789051872</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tyuiu-fastapi-rec_sys" />
-    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.0" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.1" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.2" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.3" />
@@ -455,6 +467,8 @@
     <MESSAGE value="tyuiu-fastapi-rec-sys 14.11.2024 0.0.1.9" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.5" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.6" />
   </component>
 </project>
