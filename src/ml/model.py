@@ -1,5 +1,5 @@
 import numpy as np
-from pandas import DataFrame
+import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 from src.config import settings
@@ -13,7 +13,7 @@ class RecSysModel:
         self._inputs = load_csv(settings.data.inputs_path)
         self._outputs = load_csv(settings.data.outputs_path)
 
-    def predict(self, x: DataFrame | np.ndarray) -> np.ndarray | None:
+    def predict(self, x: pd.DataFrame | np.ndarray) -> np.ndarray | None:
         if x.shape != (1, 24):
             x = x.to_numpy().reshape(1, -1)
         self._similarity = cosine_similarity(
