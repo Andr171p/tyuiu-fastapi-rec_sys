@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Literal
+from typing import Literal, List
 from pydantic_settings import BaseSettings
 
 
@@ -11,6 +11,10 @@ LOG_DEFAULT_FORMAT: str = "[%(asctime)s.%(msecs)03d] %(module)10s:%(lineno)-3d %
 class DataSettings(BaseSettings):
     inputs_path: Path = BASE_DIR / "data" / "inputs.csv"
     outputs_path: Path = BASE_DIR / "data" / "outputs.csv"
+
+
+class PreprocessingSettings(BaseSettings):
+    columns: List[str] = ['Полученное образование', 'Форма обучения']
 
 
 class EncodersSettings(BaseSettings):
@@ -46,6 +50,7 @@ class Settings(BaseSettings):
     app: AppSettings = AppSettings()
     logging: LoggingSettings = LoggingSettings()
     data: DataSettings = DataSettings()
+    preprocessing: PreprocessingSettings = PreprocessingSettings()
     encoders: EncodersSettings = EncodersSettings()
     security: RateLimitSettings = RateLimitSettings()
 

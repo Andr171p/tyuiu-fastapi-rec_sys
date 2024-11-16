@@ -12,7 +12,7 @@ class OHE:
     def fit(
             cls,
             data: pd.DataFrame,
-            columns: list[str]
+            columns: list[str] = settings.preprocessing.columns
     ) -> None:
         cls._ohe = OneHotEncoder(sparse_output=False)
         cls._ohe.fit(data[columns])
@@ -20,7 +20,7 @@ class OHE:
     @classmethod
     def transform(
             cls, data: pd.DataFrame,
-            columns: list[str]
+            columns: list[str] = settings.preprocessing.columns
     ) -> pd.DataFrame:
         encoded = cls._ohe.transform(data[columns])
         data_ohe = pd.DataFrame(encoded)
