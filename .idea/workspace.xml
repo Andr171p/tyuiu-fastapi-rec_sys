@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.6">
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocessing/ohe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocessing/ohe.py" afterDir="false" />
+    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,7 @@
     "Python.features.executor": "Run",
     "Python.load.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.model.executor": "Run",
     "Python.ohe.executor": "Run",
     "Python.request.executor": "Run",
     "Python.standard.executor": "Run",
@@ -46,7 +46,7 @@
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/andre/TyuiuRecSys/models"
+    "last_opened_file_path": "C:/Users/andre/TyuiuRecSys"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -56,13 +56,14 @@
       <recent name="C:\Users\andre\TyuiuRecSys" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\TyuiuRecSys\data" />
       <recent name="C:\Users\andre\TyuiuRecSys\src\app\gunicorn" />
       <recent name="C:\Users\andre\TyuiuRecSys\models" />
       <recent name="C:\Users\andre\TyuiuRecSys\src" />
       <recent name="C:\Users\andre\TyuiuRecSys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.form">
+  <component name="RunManager" selected="Python.model">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TyuiuRecSys" />
       <option name="ENV_FILES" value="" />
@@ -129,6 +130,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TyuiuRecSys" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ml" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ml/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ohe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TyuiuRecSys" />
       <option name="ENV_FILES" value="" />
@@ -143,28 +166,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/preprocessing/ohe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TyuiuRecSys" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/preprocessing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\andre\TyuiuRecSys\src\preprocessing\utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model" />
         <item itemvalue="Python.form" />
         <item itemvalue="Python.ohe" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.config" />
-        <item itemvalue="Python.utils" />
       </list>
     </recent_temporary>
   </component>
@@ -437,16 +438,37 @@
       <option name="project" value="LOCAL" />
       <updated>1731789051872</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.7">
+      <option name="closed" value="true" />
+      <created>1731789807480</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1731789807480</updated>
+    </task>
+    <task id="LOCAL-00029" summary="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.8">
+      <option name="closed" value="true" />
+      <created>1731790096853</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1731790096853</updated>
+    </task>
+    <task id="LOCAL-00030" summary="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9">
+      <option name="closed" value="true" />
+      <created>1731794430439</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1731794430439</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.1" />
-    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.2" />
-    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.3" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.4" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.5" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.6" />
@@ -469,6 +491,9 @@
     <MESSAGE value="tyuiu-fastapi-rec-sys 16.11.2024 0.0.2.3" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.5" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.6" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.7" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.8" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9" />
   </component>
 </project>
