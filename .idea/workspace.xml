@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9">
+    <list default="true" id="bd017e04-79e0-4218-993a-ad027f8ecb5c" name="Changes" comment="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,24 +32,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.config.executor": "Run",
-    "Python.features.executor": "Run",
-    "Python.load.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.model.executor": "Run",
-    "Python.ohe.executor": "Run",
-    "Python.request.executor": "Run",
-    "Python.standard.executor": "Run",
-    "Python.user_df.executor": "Run",
-    "Python.utils (1).executor": "Run",
-    "Python.utils.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/andre/TyuiuRecSys"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.features.executor&quot;: &quot;Run&quot;,
+    &quot;Python.load.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ohe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.request.executor&quot;: &quot;Run&quot;,
+    &quot;Python.standard.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user_df.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/FastapiRegIS&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\andre\TyuiuRecSys\models" />
@@ -462,14 +463,29 @@
       <option name="project" value="LOCAL" />
       <updated>1731794430439</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9">
+      <option name="closed" value="true" />
+      <created>1732047242604</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1732047242605</updated>
+    </task>
+    <task id="LOCAL-00032" summary="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.10">
+      <option name="closed" value="true" />
+      <created>1732121937385</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1732121937386</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.4" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.5" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.6" />
     <MESSAGE value="tyuiu-fastapi-rec_sys 1.0.7" />
@@ -494,6 +510,7 @@
     <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.7" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.8" />
     <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.9" />
+    <MESSAGE value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="tyuiu-fastapi-rec-sys 17.11.2024 0.0.2.10" />
   </component>
 </project>

@@ -8,7 +8,6 @@ from src.config import settings
 from src.app.gunicorn.application import Application
 from src.app.gunicorn.options import get_app_options
 from src.app.middleware.globals import GlobalMiddleware, g
-from src.app.middleware.rate_limit import RateLimitMiddleware
 from src.app.routers.rec_sys import rec_sys_router
 from src.app.routers.docs import docs_router
 from src.app.routers.robots import robots_router
@@ -59,7 +58,6 @@ app.include_router(
 )
 
 app.add_middleware(GlobalMiddleware)
-app.add_middleware(RateLimitMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
